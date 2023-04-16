@@ -26,7 +26,7 @@ function ContactItem({ id, nameContact, numberContact }) {
       setName(nameContact)
       setNumber(numberContact)
     }
-  }, [errorEdit]);
+  }, [errorEdit, nameContact, numberContact]);
 
   const onChange = (isChange) => {
     if (!isChange) {
